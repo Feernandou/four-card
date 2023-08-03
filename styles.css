@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body main {
+  max-width: 1600px;
+  padding-inline: 6em;
+}
+body main .up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+body main .up > h1 {
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+body main .up > h1 span {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+body main .up > p {
+  color: hsl(229, 6%, 66%);
+  padding-inline: 4em;
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 14px;
+}
+body main .down {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "lft cnt rgt";
+  align-items: center;
+  justify-items: center;
+  gap: 30px;
+}
+body main .down .left {
+  grid-area: lft;
+}
+body main .down .left .card {
+  border-top: 2px solid hsl(180, 62%, 55%);
+  width: 300px;
+}
+body main .down .center {
+  grid-area: cnt;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+body main .down .center .card {
+  border-top: 2px solid hsl(0, 78%, 62%);
+  width: 300px;
+}
+body main .down .center .card-orange {
+  border-top: 2px solid hsl(34, 97%, 64%);
+}
+body main .down .right {
+  grid-area: rgt;
+}
+body main .down .right .card {
+  border-top: 2px solid hsl(212, 86%, 64%);
+  width: 300px;
+}
+
+.card {
+  padding: 1em;
+  padding-inline: 1.5em;
+  box-shadow: 2px 2px 4px 1px rgba(207, 198, 198, 0.885);
+  border-radius: 5px;
+}
+.card img {
+  position: relative;
+  left: 160px;
+  top: 20px;
+  padding: 1em;
+}
+.card h1 {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.card p {
+  font-size: 14px;
+  color: hsl(229, 6%, 66%);
+}
+
+@media screen and (max-width: 1200px) {
+  body main {
+    padding-inline: 1em;
+  }
+  body main .up {
+    padding-block: 3em;
+    text-align: center;
+  }
+  body main .down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=styles.css.map */
